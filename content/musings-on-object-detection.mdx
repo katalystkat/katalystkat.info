@@ -5,3 +5,33 @@ summary: 'Musings on Objection Detection Algorithm, Expanding Beyond Convolution
 tag: 'humility'
 ---
 
+Today I returned to continuing my Deep Learning Specialization on Coursera after a few weeks off. This blog post will be covering specifically the Object Detection lecture from Course 3: Convolutional Neural Networks! 
+
+To understand **object detection**, we have to first understand **object localization**. In previous lectures, I learned about binary classification, softmax classification, and various methods of augmenting or shrinking images for improved algorithms of.. still, classification. Today, in order to understand object detection, I learned about 
+
+1. Object Localization 
+2. Landmark detection
+3. Object Detection 
+4. Convolutional Implementation of Sliding Windows 
+5. Bounding Box predictions 
+6. Intersection over Union 
+7. Non-max Suppression 
+8. Anchor Boxes
+9. YOLO algorithm 
+10. Region Proposals 
+11. Semantic Segmentation with U-Net
+--- 
+## 1. Object Localization 
+To me, I understood object localization as a step beyond image classification, where we not only identify if the image is indeed the object we are anticipating, but also specifically *where* in the image it is located. However, the when the image contains more than 1 object at a time, the task becomes detection. I suppose this does makes sense, but I'm guessing this would have to be a different/more advanced algorithm that is already capable of classifying objects in an image. Because now instead of trying to detect features or objects in each region of the image, we are directly scanning, if in a given region, the object we are searching for, exists. 
+
+Algorithmically, the localization information is stored as 3 separate pieces of information: 
+- if an object exists (P~c: 1|0)
+- where the object exists (b~x, b~y, b~h, b~w: denoting location and measurements of bounding box)
+- which of the classes of objects classifiable, is it? (C~1-n: label for object classification)
+
+## 2 Landmark Detection 
+Landmark detection is exactly as what it soudned like, finding significant landmarks in an image for navigational purposes. This reminded me of my interview with a Sr Engineer at Foodsmart, where he asked me how to differentiate between images of his hundreds of physicians on staff. My first response was a face recognition model, only after he pointed out that he wanted a faster solution that he could execute immediately, did I think of comparing information of the (sometimes identical) images, as each image should theoretically contain different colors etc. I suppose at that time, I should have recognized that I was already more interested in ML models :P 
+
+## 3. Object Detection 
+
+
